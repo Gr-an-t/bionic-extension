@@ -2,10 +2,17 @@
     "name": "Bionic Converter",
     "action": {},
     "manifest_version": 3,
-    "version": "0.1",
+    "version": "1.0",
     "description": "Renders text on the page using the bionic reading style",
-    "permissions": ["activeTab", "scripting"],
+    "permissions": ["tabs", "scripting", "webNavigation"],
+    "host_permissions": ["*://*/"],
     "background": {
       "service_worker": "service-worker.js"
+    },
+    "icons": {
+      "16": "images/image_16.png",
+      "32": "images/image_32.png",
+      "64": "images/image_64.png",
+      "128": "images/image_128.png"
     }
   }
