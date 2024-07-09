@@ -4,8 +4,8 @@
     "manifest_version": 3,
     "version": "1.0",
     "description": "Renders text on the page using the bionic reading style",
-    "permissions": ["tabs", "scripting", "webNavigation"],
-    "host_permissions": ["*://*/"],
+    "permissions": ["activeTab", "scripting", "webNavigation"],
+    "host_permissions": ["<all_urls>"],
     "background": {
       "service_worker": "service-worker.js"
     },
